@@ -1,0 +1,12 @@
+{
+  "name": "manual-store-github-vercel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "devDependencies": {
+    "serve": "latest"
+  }
+}

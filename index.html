@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website store manual modern support GitHub Pages dan Vercel." />
+  <title>InstantStore</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div id="pageLoader" class="page-loader">
+    <div class="loader-card">
+      <div class="spinner"></div>
+      <p>Loading Store...</p>
+    </div>
+  </div>
+
+  <header class="header">
+    <nav class="navbar">
+      <a class="brand" href="#home" data-tab="home">
+        <span class="brand-icon">IS</span>
+        <span id="storeName">InstantStore</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <button class="nav-link active" data-tab="home">Home</button>
+        <button class="nav-link" data-tab="produk">Produk</button>
+        <button class="nav-link" data-tab="caraorder">Cara Order</button>
+        <button class="nav-link" data-tab="kontak">Kontak</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="tab-page active">
+      <div class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Manual Store • GitHub & Vercel Ready</p>
+          <h1 id="heroTitle">Store modern untuk jualan manual.</h1>
+          <p id="heroDesc" class="hero-desc">Kelola produk lewat file JavaScript, order langsung ke WhatsApp admin.</p>
+          <div class="hero-actions">
+            <button class="btn primary" data-tab="produk">Lihat Produk</button>
+            <a class="btn ghost" id="waHero" target="_blank" rel="noopener">Chat Admin</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-glow"></div>
+          <h2>Manual Checkout</h2>
+          <p>Customer pilih produk, klik order, lalu diarahkan ke WhatsApp.</p>
+          <div class="stats">
+            <span><b id="totalProduk">0</b><small>Produk</small></span>
+            <span><b>24J</b><small>Support</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="produk" class="tab-page">
+      <div class="section-head">
+        <p class="eyebrow">Katalog</p>
+        <h2>Daftar Produk</h2>
+        <input id="searchInput" class="search" type="search" placeholder="Cari produk..." />
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <section id="caraorder" class="tab-page">
+      <div class="section-head">
+        <p class="eyebrow">Panduan</p>
+        <h2>Cara Order</h2>
+      </div>
+      <div class="steps">
+        <article><b>01</b><h3>Pilih Produk</h3><p>Cari produk yang ingin dibeli di halaman produk.</p></article>
+        <article><b>02</b><h3>Klik Order</h3><p>Tombol order akan membuka WhatsApp admin otomatis.</p></article>
+        <article><b>03</b><h3>Bayar Manual</h3><p>Admin akan konfirmasi stok, harga, dan metode pembayaran.</p></article>
+      </div>
+    </section>
+
+    <section id="kontak" class="tab-page">
+      <div class="contact-card">
+        <p class="eyebrow">Support</p>
+        <h2>Butuh Bantuan?</h2>
+        <p id="contactDesc">Hubungi admin untuk order, komplain, atau pertanyaan produk.</p>
+        <a id="waContact" class="btn primary" target="_blank" rel="noopener">Chat WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> <span id="footerName">InstantStore</span>. All Rights Reserved.</p>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
