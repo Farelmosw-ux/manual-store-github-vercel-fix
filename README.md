@@ -1,0 +1,1 @@
+# manual-store-github-vercel-fix
